@@ -114,8 +114,8 @@ while True:
 
 		screen.fill((124, 235, 185))
 
-		font = pygame.font.SysFont("timesnewroman", 80)
-		screen.blit(font.render("duck duck goose", True, (0,0,0)), (50, 15))
+		font = pygame.font.SysFont("timesnewroman", 70)
+		screen.blit(font.render("duck duck goose", True, (0,0,0)), (20, 15))
 		pygame.draw.line(screen, (0,0,0), (30,100),(width-30, 100), 3)
 		
 		font = pygame.font.SysFont("comicsansms", 30)
@@ -248,9 +248,9 @@ while True:
 			if event.type == pygame.QUIT:
 				pygame.quit()
 
-		if seconds != -1:
-			pygame.mixer.music.stop()
-			pygame.mixer.music.unload()
+		# if seconds != -1:
+		# 	pygame.mixer.music.stop()
+		# 	pygame.mixer.music.unload()
 
 		seconds = -1
 
@@ -268,7 +268,7 @@ while True:
 
 		if goosehit > duckhit:
 			font = pygame.font.SysFont("monospaced", 70) 
-			screen.blit(font.render("The winner is the goose!", True, (0,0,0)), (50, 15))
+			screen.blit(font.render("The winner is the goose!", True, (0,0,0)), (40, 15))
 
 			duckpicture = pygame.transform.scale(pygame.image.load("duck.jpg"), (41*2, 54*2))
 			duckrect = duckpicture.get_rect()
@@ -286,7 +286,7 @@ while True:
 		
 		elif goosehit < duckhit:
 			font = pygame.font.SysFont("monospaced", 70) 
-			screen.blit(font.render("The winner is the duck!", True, (0,0,0)), (50, 15))
+			screen.blit(font.render("The winner is the duck!", True, (0,0,0)), (40, 15))
 
 			goosepicture = pygame.transform.scale(pygame.image.load("goose.jpg"), (41*2, 54*2))
 			gooserect = goosepicture.get_rect()
