@@ -23,7 +23,7 @@ grass = pygame.Rect(0, height-25, width, 25)
 
 #duck stats
 #[xpos, ypos, xvel, yvel, yacc, jumpvel] 
-duck = [160,300,4.5,0,0.075,-4] 	#duck[2] is movement speed, duck[4] is fall speed, duck[5] is jump height
+duck = [160,300,5.5,0,0.075,-4] 	#duck[2] is movement speed, duck[4] is fall speed, duck[5] is jump height
 duckpicture = pygame.image.load("./duck.jpg")
 duckpicture = pygame.transform.scale(duckpicture, (41, 54))
 duckrect = duckpicture.get_rect()
