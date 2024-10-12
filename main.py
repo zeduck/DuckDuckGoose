@@ -274,13 +274,13 @@ while True:
 			duckrect = duckpicture.get_rect()
 			rotateduckpicture = pygame.transform.rotate(duckpicture, 270)
 			rotateduckrect = rotateduckpicture.get_rect()
-			rotateduckrect.x = width/2 - 54
+			rotateduckrect.x = int(width/2 - 54)
 			rotateduckrect.y = 300
 			screen.blit(rotateduckpicture,rotateduckrect)
 
 			goosepicture = pygame.transform.scale(pygame.image.load("goose.jpg"), (41*2,54*2))
 			gooserect = goosepicture.get_rect()
-			gooserect.x = width/2 - 41
+			gooserect.x = int(width/2 - 41)
 			gooserect.y = 200
 			screen.blit(goosepicture,gooserect)
 		
@@ -292,13 +292,13 @@ while True:
 			gooserect = goosepicture.get_rect()
 			rotategoosepicture = pygame.transform.rotate(goosepicture, 270)
 			rotategooserect = rotategoosepicture.get_rect()
-			rotategooserect.x = width/2 - 54
+			rotategooserect.x = int(width/2 - 54)
 			rotategooserect.y = 300
 			screen.blit(rotategoosepicture,rotategooserect)
 
 			duckpicture = pygame.transform.scale(pygame.image.load("duck.jpg"), (41*2,54*2))
 			duckrect = duckpicture.get_rect()
-			duckrect.x = width/2 - 41
+			duckrect.x = int(width/2 - 41)
 			duckrect.y = 200
 			screen.blit(duckpicture,duckrect)
 		
@@ -308,13 +308,13 @@ while True:
 
 			duckpicture = pygame.transform.scale(pygame.image.load("duck.jpg"), (41*2,54*2))
 			duckrect = duckpicture.get_rect()
-			duckrect.x = width/2 - 41 - 50
+			duckrect.x = int(width/2 - 41 - 50)
 			duckrect.y = 272
 			screen.blit(duckpicture,duckrect)
 
 			goosepicture = pygame.transform.scale(pygame.image.load("goose.jpg"), (41*2,54*2))
 			gooserect = goosepicture.get_rect()
-			gooserect.x = width/2 - 41 + 50
+			gooserect.x = int(width/2 - 41 + 50)
 			gooserect.y = 272
 			screen.blit(goosepicture,gooserect)
 
